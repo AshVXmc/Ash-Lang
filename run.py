@@ -1,12 +1,12 @@
 from src.ash import *
 
 def run():
-    # print("$> ")
-    # filenameinput = input()
-    # data = openfile(filenameinput)
-    data = openfile("test.ash")
-    tokens = lexer(data)
-    parser(tokens)
+    inp = input()
+    if inp.startswith("ash"):
+        filename = inp.replace(inp[0:4], "", 1)  
+        data = openfile(filename)
+        tokens = lexer(data)
+        parser(tokens)
 
 # Method run
 run()  

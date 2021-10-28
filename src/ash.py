@@ -1,24 +1,10 @@
 from sys import *
+from src.tokens import *
+
 
 def openfile(file_name):
     data = open(file_name, "r").read()
     return data
-
-# Tokens
-ECHO = "ECHO"
-STRING = "STRING"
-NUMBERS = "0123456789"
-ADD = "+"
-SUB = "-"
-MUL = "*"
-DIV = "/"
-MOD = "%"
-POW = "^"
-VAR = "$"
-IF = "if"
-ELIF = "elif"
-ELSE = "else"
-EOF = "EOF"
 
 tokens = []
 
